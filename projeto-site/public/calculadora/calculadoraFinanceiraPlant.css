@@ -1,0 +1,28 @@
+body{
+    background-image: url("Fundo.png");
+    min-width: 550px;
+    font-family: 'Roboto', sans-serif;
+}
+.img{
+    width: 10vw;
+    margin-bottom: 2%; 
+}
+.a{
+    font-weight: bold;
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 0.3%;
+    align-self: center;
+    text-align: center;
+}
+.h1{
+    margin-bottom: -0%;
+    font-weight: bold;
+}
+.h2 {
+    margin-bottom: -0%;
+    font-weight: bold;
+}

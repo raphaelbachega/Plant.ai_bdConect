@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Varela&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./calculadoraFinanceiraPlant.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="../Inicio/Inicio.html"><img src="arrow_voltar.png" alt="seta voltar" style="float: left;width: 8vw; "></a>
+
+<div class="container">
+        <h1>Para ter ideia de suas vantagens! </h1>
+        <br>
+        Selecione o alimento ou planta especial
+        <select onclick="selecionar()" id="alimentos">
+            <option value="0"> --Selecione Aqui-- </option>
+            <option value="1">Pizza</option>
+            <option value="2">Torta de morango</option>
+            <option value="3">Orquídea</option>
+            <option value="4">Molho de Pimenta</option>
+        </select><br>
+    
+        <img id="foto" src="" alt="">
+    
+        <div class="divizinha" id="div_msg"></div>
+
+</div>
+
+   
+
+</body>
+
+</html>
+<script>
+    function selecionar() {
+        if (alimentos.value == 0) {
+            foto.src = ``;
+            div_msg.innerHTML = '';
+        }
+        if (alimentos.value == 1) {
+            foto.src = `pizza.jpg`;
+            div_msg.innerHTML = ` <H2>RECEITA PIZZA</H2> <br>
+   <h1>Ingredientes - Massa </h1> <br>
+   4 tabletes de fermento biológico (para pão)  <br>
+1 colher (sopa) de açúcar <br>
+1 colher (chá) de sal <br>
+1 xícara (café) de óleo de soja <br>
+1.5 copo (tipo americano) de água morna <br>
+1kg de farinha de trigo (650 g para utilizar na massa e 350 g para polvilhar se necessário)
+ 
+<br>
+ <h1> Ingredientes - Molho de Tomate </h1> <br>
+ 1kg de tomate para molho (bem maduro) com casca <br>
+ 3 dentes de alho <br>
+ 1 maço pequeno de manjericão <br>
+ 0.25 xícara (chá) de azeite <br>
+ Sal a gosto <br>
+ <H2>  ECONOMIA NA RECEITA:</H2> <br>
+<p>Nessa receita você economiza R$ 3,22 por kg do tomate e terá  um produto livre de agrotóxico.
+</p> `;
+
+        }
+        if (alimentos.value == 2) {
+            foto.src = `torta.jpg`;
+            div_msg.innerHTML = `<h2>RECEITA TORTA DE MORANGO</h2> <br>
+<h1>INGREDIENTES - MASSA </h1> <br>
+1 xícara de farinha de trigo <br>
+1 gema batida <br>
+100 g de manteiga sem sal <br>
+2 colheres (sopa) de açúcar <br>
+1 colher (sopa) de fermento em pó <br>
+ <h1>INGREDIENTES - RECHEIO</h1> <br>
+ 700 ml de leite <br>
+4 colheres de amido de milho <br>
+2 gemas peneiradas <br>
+1 e 1/2 lata de leite condensado <br>
+  <h1>INGREDIENTES - COBERTURA</h1> <br>
+  Morangos lavados e cortados ao meio <br>
+1 gelatina de morango <br>
+
+<h2>ECONOMIA NA RECEITA</h2> <br>
+<p>Nessa receita você economiza R$ 14,50 por kilo do morango e terá  um produto livre de agrotóxico.
+</p>`;
+
+        }
+        if (alimentos.value == 3) {
+            foto.src = `orquidea.jfif`;
+            div_msg.innerHTML = `<h2>ORQUÍDEA </h2> <br>
+Uma Orquídea já cultivada custa em média R$ 280,00, já uma muda em média de R$4,40. <br>
+ <h1>ECONOMIA NA PLANTA</h1> <br>
+<p>Nessa Planta você economiza no mínimo R$ 275,60 e ainda poderá presentear quem você ama com  algo de seu cultivo próprio </p>`;
+
+        }
+        if (alimentos.value == 4) {
+            foto.src = `pimenta.jfif`;
+            div_msg.innerHTML = `<H2> RECEITA MOLHO DE PIMENTA </H2> <br>
+
+<h1>INGREDIENTES - MOLHO
+</h1> <br>
+
+200 g de pimenta dedo-de-moça (cerca de 28 unidades) <br>
+½ cebola <br>
+1 dente de alho grande <br>
+2 colheres (sopa) de azeite <br>
+1 xícara (chá) de vinagre de vinho branco <br>
+½ xícara (chá) de água <br>
+½ colher (sopa) de açúcar <br>
+1 colher (chá) de sal <br>
+2 folhas de louro <br>
+1 canela em rama <br>
+2 cravos-da-índia <br>
+
+<h2>ECONOMIA NA RECEITA</h2> <br>
+
+<p>Nessa receita você economiza R$ 7,00 por kilo da pimenta e terá  um produto livre de agrotóxico.
+</p>`;
+
+        }
+    }
+
+</script>

@@ -1,0 +1,357 @@
+                        /* parte do corpo do site e suas funções básica */
+
+html{scroll-behavior: smooth;}
+
+body{min-width: 700px;
+    font-family: 'Varela', sans-serif;
+ 
+}
+
+.invisivel{
+    display: none;
+    position: absolute;
+}
+
+.visivel{
+    position: fixed;    
+    width: 100px;
+    z-index: 1;
+    bottom: 0px; 
+    display: block;
+    
+}
+
+                        /* foramto das divs que vem depois da pagina principal */
+
+.verde{
+    background-color: #24332C;
+    height: 680px;
+    text-align: center;
+}
+
+.branco{
+    background-color: white;
+    height: 600px;
+    text-align: center;
+}
+
+.topo{
+    background-image: url("Fundo_inicio.png");
+    width: 100%;
+    height: 680px;
+    text-align: center;
+}
+
+                                /* formato do menu do topo do site (pag.1) */
+
+.menu{
+    top: 0px;
+    left: 0px;
+  display: inline-block;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100px;
+}
+
+.btn {
+    border: 2px solid black;
+    background-color: rgb(253, 241, 241,0);
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Green */
+  .btn {
+    border-color: #4CAF50;
+    color: white;
+    float: right;
+    margin-right: 5%;
+    margin-top: 2%;
+    transition: 1s;
+  }
+  .btn:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .btn {
+    border-radius: 5px;
+  }
+
+.menu img{
+    margin-left: 30px;
+    height: 100px;
+    float: left;    
+}
+
+a{
+    margin-left: 2%;
+    margin-right: 2%;
+    line-height: 90px;
+    text-decoration: none;
+    color: darkgrey;
+    font-size: 2.5vw;
+
+}
+
+.frase {                        /* frase de início da página inicial */
+    margin-top: 16vh;
+    padding: 3vh;
+    font-size: 2.5vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: greenyellow;
+}
+
+button{
+    margin-top: 6vh;
+    border: 100ch;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 255, 0);
+    background-color: rgb(0, 63, 0);
+    color: greenyellow;
+    height: 8vh;
+    width: 11vw;
+    font-size: 20px;
+    min-width: 125px;
+}
+
+button:hover{font-size: 23px;}          /* botão muda ao passar o mouse */
+
+                                /* Parte onde fala do produto (pag.2) */
+
+.escrito{                           
+    float: left;
+    width: 60%;
+}
+
+.escrito div{
+    margin-left: 10%;
+    color: white;
+    font-size: 30px;
+}
+
+.tamanho_foto{margin-top: 2vw;}
+
+p{
+    text-align: center;
+    font-size: 6vw;
+    color: #A2C16A;
+    width: 100%;
+    font-weight: bold;
+}
+
+.foto{
+    float: right;
+    width: 40%;
+    text-align: center;
+}
+
+                                            /* parte do FAQ (pag.3) */
+
+fieldset{               /* fieldset é quase uma div, poder automaticamente mostra a borda */
+    margin-bottom: 30px;
+    height: 67px;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-radius: 10px;
+}
+
+fieldset img{
+    float: right;
+    margin-right: 30px;
+    width: 70px;
+}
+
+fieldset b{
+    float: left;
+    margin-top: 17px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+                            /* plano para arrumar a parte dos planos (pag.04) */
+
+.plano1{
+    display: flex;
+    float: left;
+    height: 65%;
+    width: 42%;
+    background-color: #A2C16A;
+    text-align: center;
+    margin-left: 70px;
+    margin-top: -60px;
+    border-radius: 10px;
+}
+
+.plano1 img{
+    margin-left: 4%;
+    width: 92%;
+}
+
+.plano2{
+    display: flex;
+    float: right;
+    height: 65%;
+    width: 42%;
+    background-color: #A2C16A;
+    margin-right: 70px;
+    margin-top: -60px;
+    border-radius: 10px;
+}
+
+.plano2 img{
+    margin-left: 4%;
+    width: 92%;
+}
+
+.financa{
+    color: black;
+    background-color: #A2C16A;
+    font-weight: bold;
+    width: 250px;
+}
+
+                                /* parte de contato do site (pag.05) */
+
+.contato{
+    text-align: center;
+    margin-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+  justify-content: center;
+    margin-top: 30px;
+    flex-direction: row;
+    width: 50%;
+    height: 83%;
+}
+
+.contato img{
+    cursor: pointer;
+    width: 10%;
+    height: 10%;
+    margin-top: -20px;
+    margin-left: 5%;
+}
+
+.contato a{
+    display: contents;
+}
+
+b{font-size: 30px;}
+
+input{
+    vertical-align: middle !important;      /* (!importante) usa esse comando como prioridade */
+    margin-bottom: 2vw;
+width: 77%;
+border-radius: 7px;
+height: 4vh;
+border: 1px solid black;
+min-height: 17px;
+}
+
+.assunto{
+    margin-bottom: 2vw;
+width: 100%;
+height: 50% !important;
+border-radius: 7px;
+height: 4vh;
+border: 1px solid black;
+min-height: 17px;
+}
+
+.maps{                      /* comando para arrumar o formato do maps do site */
+    margin: 2% !important;
+    border: 1px solid black;
+    float: right;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-block-start: 0.0em;
+    padding-inline-start: 0.0em;
+    padding-inline-end: 0em;
+    padding-block-end: 0em;
+    min-inline-size: min-content;
+    width: 45% !important;
+    height: 83% !important;
+    margin-top: -500px !important;
+}
+
+.maps iframe{                   /* tamanho do maps na div colocada */
+    width: 100% !important;
+  height: 100% !important;
+}
+
+                                    /* parte final do site, o rodapé */
+
+.fim{
+    background-color: #24332C;
+    height: 60px;
+    text-align: center;
+}
+
+.fim h2{
+    color: #A2C16A;
+    margin-bottom: 100px;
+    margin: 0%;
+}
+
+#comTomTicketChatWidget, .tomticketChat-status-chat {
+    background-color: #24332C !important;
+}
+
+                    /* formato para mudar os comandos apenas em certas ocasioes */
+
+@media only screen and (max-width: 900px) {     /* muda apenas quando width chegar aos 900px */
+    input{
+        width: 70%;
+    }
+    fieldset b{
+        font-size: 3vw;
+        margin-top: 20px;
+    }
+    .tamanho_foto{
+        margin-top: 38%;
+    }
+    .plano1{
+        width: 38%;
+        margin-top: -30px;
+    }
+    .plano2{
+        width: 38%;
+        margin-top: -30px;
+    }
+}
+
+@media only screen and (max-width: 640px) {     /* muda apenas quando width chegar aos 640px */
+    fieldset b{
+        font-size: 18px;
+        margin-top: 25px;
+    }
+    .menu button{
+        min-width: 105px;
+    }
+    .contato img{
+        margin-top: -15px;
+        width: 8%;
+        height: 8%;
+    }
+    input{
+        width: 60%;
+    }
+    .escrito div{
+        font-size: 27px;
+    }
+    .tamanho_foto{
+        margin-top: 70%;
+    }
+    .plano1{
+        width: 42%;
+        margin-left: 30px;
+    }
+    .plano2{
+        width: 42%;
+        margin-right: 30px;
+    }
+}

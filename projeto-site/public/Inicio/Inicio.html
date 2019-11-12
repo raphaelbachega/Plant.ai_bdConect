@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Varela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Inicio.css">
+    <script language="javascript" SRC="Inicio.js"></script>
+    <title>Tela Inicio</title>
+</head>
+<body style="margin:0%">
+    
+    <div class="topo">      <!--Parte inicial do site (pqg.01)-->
+        <div class="menu">      <!--parde sobre o menu-->
+            <img id="Home" src="logo.png" alt="Logo">
+            <a href="#produto">Produto</a>
+            <a href="#FAQ">FAQ</a>          <!--(#) no href são links interno-->
+            <a href="#plano">Planos</a>
+            <a href="#contato">Contato</a>
+            <a href="../serialjs/index.html">Gráfico</a>
+            <button class="btn">Entrar</button>
+        </div>
+            <div class="frase">
+                    Proporcionar o cultivo de plantas e hortaliças, facilitando o esse processo com a nossa solução, assim tendo em um curto espaço de tempo e com poucos custos, a diminuição do consumo de alimentos com agrotóxicos.
+                    <br><br>
+                    Desejamos que os nossos clientes além de compartilhar bons cultivos, desfrutem da satisfação de pôr a mão na terra, e tenham uma vida saudável e feliz.                    
+            </div>
+        <button onclick="window.location.href = '../SobreNos/SobreNos.html'">Saiba mais</button>
+    </div>
+    <div id="verdinho"class="verde">        <!--Parte sobre o produto (pag.02)-->
+        <div class="escrito">
+                <a style="display: block" name="produto"></a><p>O produto</p>   <!--(a) é referencia para link interno-->
+            <div>
+                Vaso de planta com uma placa Arduíno com sensores embutidos, que captam dados de temperatura e umidade relativa do ambiente.<br><br>
+                O vaso PLANT.AI é conectado ao Wi-fi, e transmite os dados coletados para no banco de dados em tempo real.
+            </div>
+        </div>
+        <div class="foto">      <!--formatos individuais de cada img para ficar corretamente entre elas-->
+            <img class="tamanho_foto" style="width: 20%;" src="Sensor.png" alt="sensor"><br>
+            <img style="width: 9%; margin-top: -40px" src="Mais.png" alt="Mais"><br>
+            <img style="width: 35%;" src="Arduino.png" alt="Arduino"><br>
+            <img style="width: 9%; margin: 20px" src="Mais.png" alt="Mais"><br>
+            <img style="width: 35%;" src="Vaso.png" alt="Vaso">
+        </div>
+    </div>
+    <div class="branco">        <!--Parte sobre o FAQ (pag.03)-->
+        <a style="display: block" name="FAQ"></a><p style="min-inline-size: 00px; color: black;font-size: 35px;margin-bottom: 0px;margin-top: 10px;">Perguntas Frequentes</p>
+        <fieldset style="margin-top: 30px">
+                <b>O que eu faço se a bateria acabar?</b>
+                <img src="Resposta.png" alt="resposta">
+        </fieldset>
+        <fieldset>
+                <b>Se meu vaso quebrar, posso reutilizar o sensor?</b>
+                <img src="Resposta.png" alt="resposta">
+        </fieldset>
+        <fieldset>
+                <b>O clima da minha região interfere na medição?</b>
+                <img src="Resposta.png" alt="resposta">
+        </fieldset>
+        <fieldset>
+                <b>Como cadastrar minha espécie de planta?</b>
+                <img src="Resposta.png" alt="resposta">
+        </fieldset>
+        <fieldset>
+                <b>Meu sensor quebrou, o que devo fazer?</b>
+                <img src="Resposta.png" alt="resposta">
+        </fieldset>
+    </div>
+    <div class="verde" style="display: grid flex">      <!--Parte dos planos do produto (pag.04)-->
+        <a style="display: block" name="plano"></a><p>Planos</p>
+        <div class="plano1">
+            <img src="Conta_free.png" alt="">
+        </div>
+        <div class="plano2">
+            <img src="Conta_premiun.png" alt="">
+        </div>
+        <button class="financa" onclick="window.location.href = '../calculadora/calculadoraFinanceiraPlant.html'">Faça uma simulaçao</button>
+    </div>
+    <div class="branco" style="height: 600px; display: flex grid;">     <!--Parte do contato do site (pag.05)-->
+        <p style="min-inline-size: 00px; color: black;font-size: 35px;margin-bottom: 0px;margin-top: 10px;">Contatos</p>
+        <div class="contato">
+            <a style="display: block" name="contato"></a><b>nome:</b>
+            <input id="id_name" type="text"><br>
+            <b>Email:</b>
+            <input  id="id_email" type="text">
+            <b>Assunto:</b>
+            <input class="assunto" id="id_assunto" type="text">
+                                <!--imgs pronta para fazer links externos para redes sociais-->
+            <a href="http://moodle.bandtec.com.br/login/index.php" target="_blank"><img src="facebook.png" alt=""></a>
+            <a href="http://moodle.bandtec.com.br/login/index.php" target="_blank"><img src="instagram.png" alt=""></a>
+            <button style="margin-top: -20px;margin-left: 5%;">Enviar</button>
+            <a href="http://moodle.bandtec.com.br/login/index.php" target="_blank"><img src="youtube.png" alt=""></a>
+            <a href="http://moodle.bandtec.com.br/login/index.php" target="_blank"><img src="whatsapp.png" alt=""></a>
+        </div>
+        <fieldset style="border-radius: 0px;" class="maps">
+                                <!--iFrame é onde está a referência do site-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2858382656123!2d-46.663741385384114!3d-23.55817156735876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59905987b185%3A0x694b9d3b5828073f!2sBandTec%20-%20Faculdade%20de%20Tecnologia%20Bandeirantes!5e0!3m2!1spt-BR!2sbr!4v1570561225947!5m2!1spt-BR!2sbr"
+            frameborder="0%" allowfullscreen=""></iframe>
+        </fieldset><a href="#Home"><img id="botao_voltar" class="invisivel" src="arrow_subir.png" alt=""></a>
+    </div>
+    <div class="fim">       <!--Fim-->
+            <h2>Todos os direitos reservados ©</h2>
+    </div>
+
+</body>
+<script type="text/javascript">
+    // <![CDATA[
+    var ttChatLoaderS = document.createElement('script');
+    document.tomticketChatLoaderScriptVersion = 2;
+    ttChatLoaderS.src = 'https://plantai.tomticket.com/scripts-chat/chat.min.js'
+    + '?id=EP36617'
+    + '&account=2343488P06112019040623'
+    + '&autoOpen=0'
+    + '&hideWhenOffline=0'
+    + '&d=plantai'
+    + '&ts=' + new Date().getTime()
+    + '&ref=' + encodeURIComponent(document.URL);
+    document.body.appendChild(ttChatLoaderS);
+    //]]>
+    </script>
+       
+</html>

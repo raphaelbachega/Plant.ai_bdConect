@@ -12,11 +12,11 @@ router.get('/ultimas', function(req, res, next) {
 	console.log(`Recuperando as últimas ${limite_linhas} leituras`);
 	
 	const instrucaoSql = `select top ${limite_linhas} 
-						temperatura, 
-						umidade, 
-						momento,
-						FORMAT(momento,'HH:mm:ss') as momento_grafico 
-						from leitura order by id desc`;
+						regTemperatura, 
+						regUmidade, 
+						regTemporal,
+						FORMAT(regTemporal,'HH:mm:ss') as momento_grafico 
+						from Produto order by idProduto`;
 
 	sequelize.query(instrucaoSql, {
 		model: Leitura,

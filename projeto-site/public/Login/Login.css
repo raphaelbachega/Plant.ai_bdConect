@@ -1,0 +1,55 @@
+body{
+    background-image: url("Fundo.png");
+    min-width: 550px;
+    font-family: 'Varela', sans-serif;
+
+}
+
+img{
+    width: 10vw;
+    margin-bottom: 2%; 
+}
+
+a{
+    font-weight: bold;
+}
+
+div{
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 0.3%;
+    align-self: center;
+    text-align: center;
+}
+
+div h1{
+    margin-bottom: -0%;
+    font-weight: bold;
+}
+
+div input{
+margin-bottom: 2vw;
+width: 90%;
+border-radius: 7px;
+height: 4vh;
+min-height: 17px;
+border: 1px solid black;
+}
+
+div button{
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 255, 0);
+    background-color: rgb(0, 63, 0);
+    color: greenyellow;
+    height: 6vh;
+    width: 8vw;
+    font-size: 20px;
+    min-width: 70px;
+    min-height: 30px;
+}
+
+div button:hover{
+    font-size: 1.4em;
+}

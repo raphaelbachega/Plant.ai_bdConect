@@ -7,20 +7,24 @@ https://codewithhugo.com/sequelize-data-types-a-practical-guide/
 
 module.exports = (sequelize, DataTypes) => {
     let Leitura = sequelize.define('Leitura',{	
-		id: {
+		idProduto: {
+			field:"idProduto",
 			type: DataTypes.INTEGER,
 			primaryKey: true,
 			autoIncrement: true
 		},	
-		temperatura: {
+		regTemperatura: {
+			field:"regTemperatura",
 			type: DataTypes.REAL,
 			allowNull: false
 		},
-		umidade: {
+		regUmidade: {
+			field:"regUmidade",
 			type: DataTypes.REAL,
 			allowNull: false
 		},
-		momento: {
+		regTemporal: {
+			field:"regTemporal",
 			type: DataTypes.DATE,
 			allowNull: false
 		},
@@ -30,7 +34,7 @@ module.exports = (sequelize, DataTypes) => {
 		}
 	}, 
 	{
-		tableName: 'leitura', 
+		tableName: 'Produto', 
 		freezeTableName: true, 
 		underscored: true,
 		timestamps: false,
